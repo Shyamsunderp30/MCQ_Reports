@@ -20,8 +20,8 @@ public void launchBrowser() throws InterruptedException
 	openBrowser();
 	LoginCredentials();
 }
-	
-@Test(description="Changing survey")
+/* */	
+@Test
 //Test Case to Click Executive Summary Report and Heatmap Report
 public void TC_01() throws InterruptedException
 {
@@ -62,7 +62,7 @@ public void TC_05() throws InterruptedException
 	driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 	changingprogram_operation();
 	MCQ_Operation();
-	settingsbutton_Operation();
+	//settingsbutton_Operation();
 	More_dropdown_Operation();
 }
 
@@ -71,8 +71,9 @@ public void TC_06() throws InterruptedException
 {
 	driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 	changingprogram_operation();
+	Thread.sleep(5000);
 	MCQ_Operation();
-	settingsbutton_Operation();
+	//settingsbutton_Operation();
 	More_dropdown_Operation();
 	Add_Section_Operation();
 }
